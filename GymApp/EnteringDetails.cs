@@ -51,7 +51,8 @@ namespace GymApp {
             cu.Membership = v_GymMember.Checked;
 
             MessageBox.Show("New customer has been created");
-
+            var mainForm = new ESCGym();
+            mainForm.Show();
             this.Hide();
         }
     }

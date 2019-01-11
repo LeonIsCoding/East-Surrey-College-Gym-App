@@ -10,8 +10,8 @@ namespace GymApp {
         private void btnLogin_Click(object sender, EventArgs e) {
             if (UserLogin(txtUsername.Text, txtPassword.Text)) {
                 var CustomerDetailsForm = new EnteringDetails();
+                CustomerDetailsForm.Show();
                 this.Hide();
-                CustomerDetailsForm.ShowDialog();
             }
             else {
                 MessageBox.Show("User not found, please try again");

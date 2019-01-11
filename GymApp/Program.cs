@@ -16,7 +16,7 @@ namespace GymApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EnteringDetails());
+            Application.Run(new Login());
         }
     }
 }
