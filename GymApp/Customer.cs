@@ -80,9 +80,7 @@
         /// </summary>
         public string ExerciseLevel { get; set; }
 
-
         // This class has no methods at the moment, simply used for storage
         // We'll probably use methods to get from a database and update
-
     }
 }

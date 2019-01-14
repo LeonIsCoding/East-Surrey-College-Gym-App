@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace GymApp
-{
+namespace GymApp {
+
     /// <summary>
     /// This class holds methods that will validate user information that can be called anywhere from the application
     /// </summary>
-    public static class Validator
-    {
+    public static class Validator {
+
         /// <summary>
         /// This method checks that a value (after trimming leading and trailing spces is empty
         /// </summary>
@@ -19,6 +19,7 @@ namespace GymApp
             }
             return false;
         }
+
         /// <summary>
         /// This method examines the index value of the selected item from a list box which will be -1 if no item is selected
         /// returns false if the index is -1
@@ -31,7 +32,5 @@ namespace GymApp
             }
             return false;
         }
-
-
     }
 }
