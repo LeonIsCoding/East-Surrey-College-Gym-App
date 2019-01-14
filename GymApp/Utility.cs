@@ -22,7 +22,6 @@ namespace GymApp {
 
                 return value;
             }
-
             // Check that we have a sensible value for the number to be rounded
             // Probably better to throw new exception at this point
             // But not sure how best to code this
@@ -31,7 +30,6 @@ namespace GymApp {
 
                 return value;
             }
-
             // If we drop through here then we have sensible values for the input parameters
 
             double FormattedValue = Math.Round(value, decimalplacesrequired);
