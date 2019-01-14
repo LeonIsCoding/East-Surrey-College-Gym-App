@@ -16,6 +16,9 @@ namespace GymApp {
 
             Assert.IsTrue(cu != null);
         }
+        /// <summary>
+        /// This test checks to see if the Customer properties are being assigned and declared correctly
+        /// </summary>
         [Test]
         public void TestCustomerAllProperties() {
             Customer cu = new Customer {
