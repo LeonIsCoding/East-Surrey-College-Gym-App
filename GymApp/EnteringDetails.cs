@@ -9,7 +9,6 @@ namespace GymApp {
         public EnteringDetails() {
             InitializeComponent();
         }
-
         /// <summary>
         /// This method returns a validation failure message depending on if information is blank
         /// </summary>
