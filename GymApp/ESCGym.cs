@@ -73,11 +73,11 @@ namespace GymApp {
                 MessageBox.Show(validationFailureMessage);
                 return;
             }
-
-            // Instanciate an instance of the Customer object note 
+            
+            // Instantiate an instance of the Customer object note 
             // there is only ever one of these. 
             Customer cu = new Customer();
-            // Instanciate an instance of the CalculatorEngine object note 
+            // Instantiate an instance of the CalculatorEngine object note 
             // there is only ever one of these. 
             CalculatorEngine ce = new CalculatorEngine();
 
