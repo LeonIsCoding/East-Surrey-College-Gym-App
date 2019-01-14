@@ -2,11 +2,18 @@
 using System.Windows.Forms;
 
 namespace GymApp {
+    /// <summary>
+    /// This public partial class is the backend of the EnteringDetails form
+    /// </summary>
     public partial class EnteringDetails : Form {
         public EnteringDetails() {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This method returns a validation failure message depending on if information is blank
+        /// </summary>
+        /// <returns></returns>
         private string GetValidationFailureMessage() {
             if (Validator.IsEmpty(v_Address.Text)) {
                 return "Address can not be blank";
@@ -28,11 +35,20 @@ namespace GymApp {
             }
             return string.Empty;
         }
+        /// <summary>
+        /// The exit method simply closes down the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void v_Exit_Click(object sender, EventArgs e) {
-
             Application.Exit();
         }
-
+        /// <summary>
+        /// This method from the OK button on the form first checks if it currently has an exisiting validation failure message
+        /// if false, it will create a new Customer object from the form controls text values
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void v_OK_Click(object sender, EventArgs e) {
 
             string ValidationFailureMessage = GetValidationFailureMessage();
