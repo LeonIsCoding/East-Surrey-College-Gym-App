@@ -20,52 +20,42 @@
         /// This property holds the customer's title
         /// </summary>
         public string Title { get; set; } 
-
         /// <summary>
         /// This property holds the customer's first name
         /// </summary>
         public string Firstname { get; set; }
-
         /// <summary>
         /// This property hold the customer's surname
         /// </summary>
         public string Surname { get; set; }
-
         /// <summary>
         /// This property hold the customer's address
         /// </summary>
         public string Address { get; set; }
-
         /// <summary>
         /// This property hold the customer's email address
         /// </summary>
         public string Email { get; set; }
-
         /// <summary>
         /// This property hold the customer's phone number
         /// </summary>
         public string PhoneNumber { get; set; }
-
         /// <summary>
         /// This property holds a true or false if the customer is already a member
         /// </summary>
         public bool Membership { get; set; }
-
         /// <summary>
         /// This property holds the Basal Metabolic Rate
         /// </summary>
         public double BMR { get; set; }
-
         /// <summary>
         /// This property holds the Body Mass Index
         /// </summary>
         public double BMI { get; set; }
-
         /// <summary>
         /// This property holds the Body Mass Index
         /// </summary>
         public string BMICategory { get; set; }
-    
         /// <summary>
         /// This property holds a flag that indicates that the calculations have to be done for 
         /// male or female depending whether its true or false. If true then it's a male
