@@ -7,12 +7,12 @@ namespace GymApp {
         /// </summary>
     class UtilityTest {
 
-            // Tests
+        // Tests
 
-            /// <summary>
-            /// This test makes sure that the CalculatorEngine class exists
-            /// </summary>
-            [Test]
+        /// <summary>
+        /// This tests the rounding method in the class
+        /// </summary>
+        [Test]
             public void TestRoundValuesMethod() {
             Assert.AreEqual(10, Utility.RoundValue(0, 9.51));
             Assert.AreEqual(9, Utility.RoundValue(0, 9.49));
