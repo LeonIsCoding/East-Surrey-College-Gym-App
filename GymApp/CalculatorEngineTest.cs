@@ -57,6 +57,9 @@ namespace GymApp {
 
             Assert.AreEqual(14.512471655328797, Engine.BMI);
         }
+        /// <summary>
+        /// This tests that the correct BMI category is returned depending on the parameter
+        /// </summary>
         [Test]
         public void CalcBMICategory() {
             Assert.AreEqual("Underweight", Engine.GetBMICategory(16));

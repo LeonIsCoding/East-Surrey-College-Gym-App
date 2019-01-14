@@ -12,6 +12,7 @@ namespace GymApp
         }
 
         // Properties
+
         /// <summary>
         /// This property holds the age in years
         /// </summary>
@@ -28,7 +29,7 @@ namespace GymApp
             }
         }
         /// <summary>
-        /// This property holds the height in centimetres
+        /// This property holds the height in centimeters
         /// </summary>
         public int HeightCM {
             get {
@@ -39,7 +40,7 @@ namespace GymApp
             }
         }
         /// <summary>
-        /// Note, this propety holds the height in metres as a double since we're dividing Height in centimetres by 100 to get Height in metres
+        /// Note, this propety holds the height in metres as a double since we're dividing Height in centimetres by 100 to get Height in meters
         /// </summary>
         public double HeightM
         {
@@ -50,7 +51,9 @@ namespace GymApp
                 _HeightM = value;
             }
         }
-
+        /// <summary>
+        /// This propety holds the user's BMR
+        /// </summary>
         public double BMR
         {
             get {                
@@ -175,15 +178,15 @@ namespace GymApp
         /// <param name="IsMale"></param>
         /// <returns>Basal Metabolic Rate, non-revised Harris-Benedict equation</returns>
         public double BMR_HB() {
-            //These constants are factors used in the calculation of Basal Metabolic Rate (BMR) 
-            //using the non-revised Harris-Benedict equation for men
+            // These constants are factors used in the calculation of Basal Metabolic Rate (BMR) 
+            // using the non-revised Harris-Benedict equation for men
             const double MENBMRFACTOR = 66.47;
             const double MENWEIGHTFACTOR = 13.75;
             const double MENHEIGHTFACTOR = 5.003;
             const double MENAGEFACTOR = 6.755;
 
-            //These constants are factors used in the calculation of Basal Metabolic Rate (BMR)
-            //using the non-revised Harris-Benedict equation for women
+            // These constants are factors used in the calculation of Basal Metabolic Rate (BMR)
+            // using the non-revised Harris-Benedict equation for women
             const double WOMENBMRFACTOR = 655.1;
             const double WOMENWEIGHTFACTOR = 9.563;
             const double WOMENHEIGHTFACTOR = 1.850;
