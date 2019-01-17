@@ -282,7 +282,7 @@ namespace GymApp
             if (BMI < 18.5) {
                 Category = "Underweight";
             } else if (BMI >= 18.5 && BMI <= 24.9) {
-                Category = "Normal weight";
+                Category = "Healthy";
             } else if (BMI >= 25 && BMI <= 29.9) {
                 Category = "Overweight";
             } else {
