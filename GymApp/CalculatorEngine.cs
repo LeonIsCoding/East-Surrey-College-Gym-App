@@ -16,7 +16,14 @@ namespace GymApp
         /// <summary>
         /// This property holds the age in years
         /// </summary>
-        public int AgeYears { get; set; }
+        public int AgeYears {
+            get {
+                return _AgeYears;
+            }
+            set {
+                _AgeYears = value;
+            }
+        }
         /// <summary>
         /// This property holds the weight in kilograms
         /// </summary>
@@ -42,8 +49,7 @@ namespace GymApp
         /// <summary>
         /// Note, this propety holds the height in metres as a double since we're dividing Height in centimetres by 100 to get Height in meters
         /// </summary>
-        public double HeightM
-        {
+        public double HeightM {
             get {
                 return _HeightM;
             }
@@ -54,8 +60,7 @@ namespace GymApp
         /// <summary>
         /// This propety holds the user's BMR
         /// </summary>
-        public double BMR
-        {
+        public double BMR {
             get {                
                 return _BMR;
             }
@@ -92,8 +97,7 @@ namespace GymApp
         /// This property holds a flag that indicates that the calculations have to be done for 
         /// male or female depending whether its true or false. If true then it's a male
         /// </summary>
-        public bool IsMale
-        {
+        public bool IsMale {
             get {
                 return _IsMale;
             }
@@ -104,8 +108,7 @@ namespace GymApp
         /// <summary>
         /// This property holds the Recommended Daily Intake which is a measurement of Kilocalorie
         /// </summary>
-        public double RDI
-        {
+        public double RDI {
             get {
                 return _RDI;
             }
@@ -117,8 +120,7 @@ namespace GymApp
         /// <summary>
         /// This property holds the exercise level which is a string which is the selected item from the UI control
         /// </summary>
-        public string ExerciseLevel
-        {
+        public string ExerciseLevel {
             get {
                 return _ExerciseLevel;
             }
@@ -229,7 +231,6 @@ namespace GymApp
         /// <param name="BMR"></param>
         /// <returns>Basal Metabolic Rate</returns>
         public double CalcRDI(string Level, double BMR) {
-
             //These constants are used in the calculation of the recommended daily kilocalorie intake
             const double DIRFACTOR_NONE = 1.2;
             const double DIRFACTOR_LIGHT = 1.375;
@@ -246,7 +247,6 @@ namespace GymApp
                     }
                 case "Light (1-3 days per week)": {
                         result = BMR * DIRFACTOR_LIGHT;
-                        //return result;
                         break;
                     }
                 case "Moderate (3-5 days per week)": {
@@ -261,13 +261,10 @@ namespace GymApp
                         result = BMR * DIRFACTOR_VERYHEAVY;
                         break;
                     }
-
                 default: {
                         throw new Exception("Unexpected Level");
                     }
-
             }
-            //result = Weight / Math.Pow(Height, 2);
             return result;
         }
         /// <summary>
@@ -292,7 +289,7 @@ namespace GymApp
         }
 
         // Instance Variables
-        private int _Age;
+        private int _AgeYears;
         private int _Weight;
         private int _HeightCM;
         private string _BMICategory;
