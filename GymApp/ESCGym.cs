@@ -90,6 +90,9 @@ namespace GymApp {
             ce.ExerciseLevel = v_ExerciseLevel.SelectedItem.ToString();
             ce.IsMale = v_Male.Checked;
             ce.BMR = ce.BMR;
+            ce.BMI = ce.BMI;
+            ce.BMICategory = ce.BMICategory;
+            ce.RDI = ce.RDI;
 
             // Set calculations and format them according to client requirements
 
