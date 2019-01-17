@@ -70,6 +70,7 @@
     <Compile Include="ESCGym.designer.cs">
       <DependentUpon>ESCGym.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
