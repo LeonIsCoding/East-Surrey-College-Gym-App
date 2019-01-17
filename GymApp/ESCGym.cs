@@ -19,9 +19,9 @@
 
 using System;
 using System.Windows.Forms;
-//
+
 // Author: Leon Essam
-// Version: 0.8
+// Version: 1
 // ID: 2
 
 namespace GymApp {
@@ -79,16 +79,16 @@ namespace GymApp {
             Customer cu = new Customer();
             // Instantiate an instance of the CalculatorEngine object note 
             // there is only ever one of these. 
-            CalculatorEngine ce = new CalculatorEngine();
-
-            // Set calculator object properties to current input values
-            ce.AgeYears = AgeYears;
-            ce.WeightKG = WeightKg;
-            ce.HeightCM = HeightCm;
-            // Force denominator to be double
-            ce.HeightM = HeightCm / DENOMINATOR;
-            ce.ExerciseLevel = v_ExerciseLevel.SelectedItem.ToString();
-            ce.IsMale = v_Male.Checked;
+            CalculatorEngine ce = new CalculatorEngine {
+                // Set calculator object properties to current input values
+                AgeYears = AgeYears,
+                WeightKG = WeightKg,
+                HeightCM = HeightCm,
+                // Force denominator to be double
+                HeightM = HeightCm / DENOMINATOR,
+                ExerciseLevel = v_ExerciseLevel.SelectedItem.ToString(),
+                IsMale = v_Male.Checked
+            };
             ce.BMR = ce.BMR;
             ce.BMI = ce.BMI;
             ce.BMICategory = ce.BMICategory;
