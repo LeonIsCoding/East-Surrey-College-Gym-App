@@ -22,7 +22,7 @@ namespace GymApp {
             if (UserLogin(txtUsername.Text, txtPassword.Text)) {
                 var CustomerDetailsForm = new EnteringDetails();
                 CustomerDetailsForm.Show();
-                this.Hide();
+                Hide();
             }
             else {
                 MessageBox.Show("User not found, please try again");
@@ -44,7 +44,7 @@ namespace GymApp {
         /// <param name="Username"></param>
         /// <param name="Password"></param>
         /// <returns></returns>
-        private static Boolean UserLogin(string Username, string Password) {
+        private static bool UserLogin(string Username, string Password) {
             if (Username == "Admin" && Password == "admin") {
                 return true;
             }
