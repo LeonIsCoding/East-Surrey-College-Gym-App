@@ -49,26 +49,24 @@ namespace GymApp {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void v_OK_Click(object sender, EventArgs e) {
-
             string ValidationFailureMessage = GetValidationFailureMessage();
             if (ValidationFailureMessage != string.Empty) {
                 MessageBox.Show(ValidationFailureMessage);
                 return;
             }
-
-            Customer cu = new Customer();
-            cu.Title = v_Title.Text;
-            cu.Firstname = v_Firstname.Text;
-            cu.Surname = v_Surname.Text;
-            cu.Address = v_Address.Text;
-            cu.Email = v_Email.Text;
-            cu.PhoneNumber = v_Phone.Text;
-            cu.Membership = v_GymMember.Checked;
-
+            Customer cu = new Customer {
+                Title = v_Title.Text,
+                Firstname = v_Firstname.Text,
+                Surname = v_Surname.Text,
+                Address = v_Address.Text,
+                Email = v_Email.Text,
+                PhoneNumber = v_Phone.Text,
+                Membership = v_GymMember.Checked
+            };
             MessageBox.Show("New customer has been created");
             var mainForm = new ESCGym();
             mainForm.Show();
-            this.Hide();
+            Hide();
         }
     }
 }
