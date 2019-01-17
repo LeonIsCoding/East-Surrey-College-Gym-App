@@ -63,7 +63,7 @@ namespace GymApp {
         [Test]
         public void CalcBMICategory() {
             Assert.AreEqual("Underweight", Engine.GetBMICategory(16));
-            Assert.AreEqual("Normal weight", Engine.GetBMICategory(19.5));
+            Assert.AreEqual("Healthy", Engine.GetBMICategory(19.5));
             Assert.AreEqual("Overweight", Engine.GetBMICategory(26.4));
             Assert.AreEqual("Obese", Engine.GetBMICategory(31));
         }
