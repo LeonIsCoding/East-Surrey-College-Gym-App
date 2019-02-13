@@ -91,7 +91,7 @@
             // 
             // v_Calculate
             // 
-            this.v_Calculate.Location = new System.Drawing.Point(207, 485);
+            this.v_Calculate.Location = new System.Drawing.Point(374, 485);
             this.v_Calculate.Name = "v_Calculate";
             this.v_Calculate.Size = new System.Drawing.Size(75, 23);
             this.v_Calculate.TabIndex = 8;
@@ -244,23 +244,25 @@
             // 
             // v_Help
             // 
-            this.v_Help.Location = new System.Drawing.Point(369, 485);
+            this.v_Help.Location = new System.Drawing.Point(293, 485);
             this.v_Help.Name = "v_Help";
             this.v_Help.Size = new System.Drawing.Size(75, 23);
             this.v_Help.TabIndex = 18;
             this.v_Help.Text = "Help";
             this.v_Help.UseVisualStyleBackColor = true;
+            this.v_Help.Visible = false;
             this.v_Help.Click += new System.EventHandler(this.v_Help_Click);
             // 
             // v_Print
             // 
             this.v_Print.Enabled = false;
-            this.v_Print.Location = new System.Drawing.Point(288, 485);
+            this.v_Print.Location = new System.Drawing.Point(212, 485);
             this.v_Print.Name = "v_Print";
             this.v_Print.Size = new System.Drawing.Size(75, 23);
             this.v_Print.TabIndex = 19;
             this.v_Print.Text = "Print";
             this.v_Print.UseVisualStyleBackColor = true;
+            this.v_Print.Visible = false;
             this.v_Print.Click += new System.EventHandler(this.v_Print_Click);
             // 
             // v_Age
