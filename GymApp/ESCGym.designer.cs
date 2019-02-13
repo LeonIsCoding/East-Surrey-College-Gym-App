@@ -382,6 +382,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.v_Help);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ESCGym";
