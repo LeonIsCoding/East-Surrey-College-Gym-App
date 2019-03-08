@@ -3,11 +3,6 @@
 namespace GymApp {
     [TestFixture]
     class ValidatorTest {
-
-        [Test]
-        public void CheckClassExists() {
-            // pass
-        }
         [Test]
         public void IsEmptyTestMethod() {
             Assert.AreEqual(false, Validator.IsEmpty("amiempty"));
