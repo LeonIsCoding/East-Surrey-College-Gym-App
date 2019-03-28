@@ -1,15 +1,12 @@
 ﻿using System;
 
-namespace GymApp
-{
+namespace GymApp {
     /// <summary>
     /// This class creates a calculation engine object, note there is only ever one instance of this class
     /// </summary>
     public class CalculatorEngine {
         // Constructor
-        public CalculatorEngine() {
-            
-        }
+        public CalculatorEngine() { }
 
         // Properties
 
