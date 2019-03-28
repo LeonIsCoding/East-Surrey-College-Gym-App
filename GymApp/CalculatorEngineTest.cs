@@ -1,13 +1,12 @@
 ﻿using System;
 using NUnit.Framework;
-#if DEBUG
+
 namespace GymApp {
     /// <summary>
     /// This class is used for testing various methods in the CalculatorEngine class.
     /// </summary>
         [TestFixture]
     class CalculatorEngineTest {
-        
         // Tests
 
         /// <summary>
@@ -70,4 +69,3 @@ namespace GymApp {
         private CalculatorEngine Engine { get; set; } = new CalculatorEngine();
     }
 }
-#endif
