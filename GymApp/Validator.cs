@@ -11,7 +11,7 @@ namespace GymApp {
         /// This method checks that a value (after trimming leading and trailing spces is empty
         /// </summary>
         /// <param name="value"></param>
-        /// <returns>true or false depending on whether the ttrimmed value is empty</returns>
+        /// <returns>true or false depending on whether the trimmed value is empty</returns>
         public static Boolean IsEmpty(string value) {
             value = value.Trim();
             if (value == string.Empty) {
